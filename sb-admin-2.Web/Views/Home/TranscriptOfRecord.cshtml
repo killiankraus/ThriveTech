@@ -1,0 +1,81 @@
+﻿
+@{ ViewBag.Title = "TranscriptOfRecord";
+    Layout = "~/Views/Shared/_Layout.cshtml"; 
+    }
+
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                List of Students
+            </div>
+            <!-- /.panel-heading -->
+            <div class="panel-body">
+                <div class="dataTable_wrapper">
+                    <table class="table table-striped table-bordered table-hover" id="tblstudents">
+                        <thead>
+                            <tr>
+                                <th>Student ID</th>
+                                <th>Last Name</th>
+                                <th>First Name</th>
+                                <th>Middle Name</th>
+                                <th>Sex</th>
+                                <th>Age</th>
+                                <th>Contact Number</th>
+                                <th>Email</th>
+                                <th>Address</th>
+
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script type="text/javascript">
+    $(function () {
+        $.ajax({
+            type: "POST",
+            url: "/Home/AjaxMethod",
+            data: '{}',
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: OnSuccess,
+            failure: function (response) {
+                alert(response.d);
+            },
+            error: function (response) {
+                alert(response.d);
+            }
+        });
+    });
+    function OnSuccess(response) {
+        $("#tblstudents").DataTable(
+            {
+                bLengthChange: true,
+                lengthMenu: [[5, 10, -1], [5, 10, "All"]],
+                bFilter: true,
+                bSort: true,
+                bPaginate: true,
+                data: response,
+                columns: [{ 'data': 'StudentId' },
+                { 'data': 'Lastname' },
+                { 'data': 'Firstname' },
+                { 'data': 'Middlename' },
+                { 'data': 'Sex' },
+                { 'data': 'Age' },
+                { 'data': 'Contact_number' },
+                { 'data': 'Email' },
+                { 'data': 'Address' }]
+            });
+    };</script>
+
+
+
+
+
