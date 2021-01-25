@@ -31,6 +31,11 @@ namespace sb_admin_2.Web
                       "~/Content/timeline.css",
                       "~/Content/StudentPortal.css"
                       ));
+
+            bundles.Add(new StyleBundle("~/Content/color").Include(
+                "~/Content/color.css"
+                ));
+
         }
     }
 }

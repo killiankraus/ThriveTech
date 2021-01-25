@@ -596,6 +596,7 @@
     <Content Include="Content\bootstrap-reboot.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\color.css" />
     <Content Include="Content\StudentPortal.css" />
     <Content Include="Content\timeline.css" />
     <Content Include="favicon.ico" />
@@ -1072,9 +1073,11 @@
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
     <Content Include="Views\Home\DownloadableForms.cshtml" />
+    <Content Include="Views\Shared\_Student.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\img\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
