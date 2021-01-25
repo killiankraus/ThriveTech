@@ -11,7 +11,7 @@ namespace sb_admin_2.Web.Domain
         public IEnumerable<Navbar> navbarItems()
         {
             var menu = new List<Navbar>();
-            menu.Add(new Navbar { Id = 1, nameOption = "Dashboard", controller = "Home", action = "Index", imageClass = "fa fa-dashboard fa-fw", status = true, isParent = false, parentId = 0 });
+            menu.Add(new Navbar { Id = 1, nameOption = "Dashboard", controller = "Home", action = "Index", imageClass = "fa fa-dashboard fa-fw", status = true, isParent = true, parentId = 0 });
             menu.Add(new Navbar { Id = 2, nameOption = "General Information", imageClass = "fa fa-bar-chart-o fa-fw", status = true, isParent = true, parentId = 0 });
             menu.Add(new Navbar { Id = 3, nameOption = "Mission & Vission", controller = "Home", action = "MissionandVission", status = true, isParent = false, parentId = 2 });
             menu.Add(new Navbar { Id = 4, nameOption = "Core Values", controller = "Home", action = "CoreValues", status = true, isParent = false, parentId = 2 });

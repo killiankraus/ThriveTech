@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'C:\Users\Earvin\Desktop\FILES\design\final\Web-SIA-main\Web-SIA-main\sb-admin-2.Web\Model1.edmx'. 
+﻿// T4 code generation is enabled for model 'C:\Users\killiankraus\Documents\GitHub\ThriveTech\sb-admin-2.Web\Model1.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.

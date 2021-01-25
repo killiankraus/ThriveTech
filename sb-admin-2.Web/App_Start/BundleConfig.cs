@@ -9,7 +9,8 @@ namespace sb_admin_2.Web
         public static void RegisterBundles(BundleCollection bundles)
         {
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
-                        "~/Scripts/jquery-{version}.js"));
+                        "~/Scripts/jquery-{version}.js",
+                        "~/Scripts/StudentPortal.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
                         "~/Scripts/jquery.validate*"));
@@ -24,10 +25,12 @@ namespace sb_admin_2.Web
                       "~/Scripts/respond.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/bower_components/bootstrap/dist/css/bootstrap.min.css",
+                      "~/bower_components/bootstrap/dist/css/bootstrap.css",
+                      "~/bower_components/bootstrap/dist/css/bootstrap-theme.min.css",
                       "~/bower_components/metisMenu/dist/metisMenu.min.css",
                       "~/Content/timeline.css",
-                      "~/Content/sb-admin-2.css"));
+                      "~/Content/StudentPortal.css"
+                      ));
         }
     }
 }

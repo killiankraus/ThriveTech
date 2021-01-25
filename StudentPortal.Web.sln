@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30621.155
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sb-admin-2.Web", "sb-admin-2.Web\sb-admin-2.Web.csproj", "{CEE973D5-3804-40BF-89DC-F3E48DA3FFFC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentPortal.Web", "sb-admin-2.Web\StudentPortal.Web.csproj", "{CEE973D5-3804-40BF-89DC-F3E48DA3FFFC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sb-admin-2.Web.Tests", "sb-admin-2.Web.Tests\sb-admin-2.Web.Tests.csproj", "{C91E7BF6-F06C-4D79-ACE7-7CD0F79246C1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentPortal.Tests", "sb-admin-2.Web.Tests\StudentPortal.Tests.csproj", "{C91E7BF6-F06C-4D79-ACE7-7CD0F79246C1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,5 +24,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {353959B0-E300-489A-A154-14FB48DF7B17}
 	EndGlobalSection
 EndGlobal

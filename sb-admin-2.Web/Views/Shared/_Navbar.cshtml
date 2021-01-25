@@ -240,12 +240,12 @@
                 </li>
                 @foreach (var item in Model)
                 {
-                    if (item.isParent == false && item.parentId == 0)
+                    @*if (item.isParent == false && item.parentId == 0)
                     {
                         <li><a href="@Url.Action(item.action, item.controller)"><i class="@item.imageClass"></i> @item.nameOption</a></li>
                     }
                     else
-                    {
+                    {*@
                         if (item.isParent == true)
                         {
                             <li>
@@ -265,7 +265,7 @@
                                 </ul>
                             </li>
                         }
-                    }
+                    @*}*@
                 }
             </ul>
         </div>

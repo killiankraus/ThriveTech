@@ -7,6 +7,7 @@
       <Diagram DiagramId="7bbce0c766a041ec898e2814f2f032da" Name="Diagram1">
         <EntityTypeShape EntityType="RegistrationModel.Calendar" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="RegistrationModel.Member" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="RegistrationModel.Registration" Width="1.5" PointX="5" PointY="0.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

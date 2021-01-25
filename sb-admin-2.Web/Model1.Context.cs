@@ -27,5 +27,6 @@ namespace sb_admin_2.Web
     
         public virtual DbSet<Calendar> Calendars { get; set; }
         public virtual DbSet<Member> Members { get; set; }
+        public virtual DbSet<Registration> Registrations { get; set; }
     }
 }

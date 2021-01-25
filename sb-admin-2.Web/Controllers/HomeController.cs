@@ -1,4 +1,6 @@
-﻿using System;
+﻿using sb_admin_2.Web.Models.DTO;
+using sb_admin_2.Web.Models.Repository;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -20,57 +22,57 @@ namespace sb_admin_2.Web.Controllers
 
         public ActionResult CoreValues()
         {
-            return View("CoreValues");
+            return View();
         }
 
         public ActionResult UniversityCalendar()
         {
-            return View("UniversityCalendar");
+            return View();
         }
 
         public ActionResult UniversityHymn()
         {
-            return View("UniversityHymn");
+            return View();
         }
 
         public ActionResult SanBartolome()
         {
-            return View("San Bartolome");
+            return View();
         }
 
         public ActionResult Batasan()
         {
-            return View("Batasan");
+            return View();
         }
 
         public ActionResult SanFrancisco()
         {
-            return View("San Francisco");
+            return View();
         }
 
         public ActionResult TranscriptOfRecord()
         {
-            return View("TranscriptOfRecord");
+            return View();
         }
 
-        public ActionResult DownlableForms()
+        public ActionResult DownloadableForms()
         {
-            return View("Downloadable Forms");
+            return View();
         }
 
         public ActionResult Login()
         {
-            return View("Login");
+            return View();
         }
 
         public ActionResult Register()
         {
-            return View("Register");
+            return View();
         }
 
         public ActionResult ForgotPassword()
         {
-            return View("ForgotPassword");
+            return View();
         }
 
 
@@ -141,8 +143,12 @@ namespace sb_admin_2.Web.Controllers
             return Json(members);
         }
 
-
-
+        DataTableRepository dataTBrepository = new DataTableRepository();
+        public ActionResult getRecords(string category, string keyword)
+        {
+            List<RecordDTO> records = dataTBrepository.records(category, keyword);
+            return Json(new { data = records });
+        }
 
 
 

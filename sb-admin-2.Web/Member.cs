@@ -19,7 +19,6 @@ namespace sb_admin_2.Web
         public string Firstname { get; set; }
         public string Middlename { get; set; }
         public string Sex { get; set; }
-        public string Age { get; set; }
         public string Contact_number { get; set; }
         public string Email { get; set; }
         public string Address { get; set; }
